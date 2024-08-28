@@ -1,6 +1,6 @@
-## 202030215 서민석
+# <span style="color:pink">202030215 서민석</span>
 
-## <span style="color:orange">8월 28일</span>
+## 8월 28일
 
 ### Next.js
 ```
