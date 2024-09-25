@@ -14,7 +14,27 @@ function HomePage() {
 
 export default Homepage;
 ```
+### *페이지에서 경로 매개변수 사용*
+```js
+export async function getServerSideProps({params}){
+  const {name} = params
+  return {
+    props: {
+      name,
+    },
+  };
+}
 
+function Greet(props) {
+  return (
+    <h1>Hello, {props.name}! </h1>
+  );
+}
+export default Greet;
+```
+#### *경로 매개변수를 사용해서 동적 페이지를 쉽게 만들 수 있음.*
+* *내장 getServerSideProps 함수를 통해 URL에서 동적으로 [name] 변수 값을 가져오는 것*
+* *greet/Mitch 주소로 가면 "Hello, Mitch!" 라는 문구가 렌더링 됨.*
 ## _9월 11일_
 
 ### _파이프 라인_
