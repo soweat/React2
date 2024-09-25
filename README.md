@@ -2,12 +2,11 @@
 
 ## _9월25일_
 
-### _라우팅 시스템_
-
-- 특징
-  - _React의 React Router, Reach Router 등은 클라이언트 라우팅만 구현할 수 있음._
-  - _Next는 파일 시스템 기반 페이지와 라우팅을 함._
-  - _페이지는 /pages 디렉토리 안의 _.js, _.jsx, _.ts, _.tsx 파일에서 export한 React 컴포넌트 임._
+### *라우팅 시스템*
+* 특징
+  * *React의 React Router, Reach Router 등은 클라이언트 라우팅만 구현할 수 있음.*
+  * *Next는 파일 시스템 기반 페이지와 라우팅을 함.*
+* *페이지는 /pages 디렉토리 안의 *.js, *.jsx, *.ts, *.tsx 파일에서 export한 React 컴포넌트 임.*
 
 ## _9월 11일_
 
