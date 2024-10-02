@@ -1,11 +1,9 @@
-export default async function Page() {
-  let data = await fetch("https://api.vercel.app/blog");
-  let posts = await data.json();
-  return (
-    <ui>
-      {ports.map((post) => (
-        <li key={post.id}>{post.tilte}</li>
-      ))}
-    </ui>
-  );
+export default function Foo() {
+  return(
+    <>
+      <h1>foo 1</h1>
+      <h1>foo 2</h1>
+      <h1>foo 3</h1>
+    </>
+  )
 }

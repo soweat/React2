@@ -1,6 +1,19 @@
 # _202030215 서민석_
 
-## _9월25일_
+## _10월 2일_
+![Alt text](image.png)
+
+* *bar/woo Page - bar 디렉토리 루트*
+  * *라우팅을 하려는 페이지는 같은 이름이 들어가면 안됨*
+  * *ex) localhost:3000/bar/foo/index.jsx를 주소창에 입력 시 404 오류 발생*
+
+```
+Page Routing
+1. App routing (Y/N) N
+2. src / ? 안 쓰는게 나음
+```
+
+## _9월 25일_
 
 ### *라우팅 시스템*
 * 특징
