@@ -1,11 +1,40 @@
 # _202030215 서민석_
 
+## _10월 4일_
+
+### *_app*
+```
+app.jsx는 서버에 요청할 때 가장 먼저 실행되는 컴포넌트
+```
+* **페이지에 적용할 공통 레이아웃을 선언하는 곳**
+* **Global CSS는 이곳에 추가 됨.**
+* **props 중 Component는 서버에 요청한 페이지임.**
+* **pageProps는 App.getInitalProps를 이용하여 prefetching된 데이터를 변환 함.**
+* **데이터가 없다면 빈 객체({})를 반환**
+* **단 getStaticProps, getServerSideProps와 같은 Data Fetching methods는 동작하지 않음.**
+
+### *_document*
+
+```
+document.jsx는 _app.jsx 다음에 실행됨
+```
+* **각 페이지에서 공통적으로 사용될 html, head, body 안에 들어갈 내용을 선언함.**
+* **onClick 같은 이벤트나 CSS는 이 곳에 선언하지 않음.**
+* **로직(이벤트), 스타일을 선언할 수 없음.**
+
+### *layout.jsx*
+```
+layout.jsx는 app 디렉토리 아래에 위치함.
+```
+* **layout.jsx는 Page Project에서 사용하던 _app.jsx와 _document.jsx를 대체함.**
+* **이 파일은 삭제해도 프로젝트를 실행하면 자동으로 생성 됨.**
+
 ## _10월 2일_
 ![Alt text](image.png)
 
 * *bar/woo Page - bar 디렉토리 루트*
-  * *라우팅을 하려는 페이지는 같은 이름이 들어가면 안됨*
-  * *ex) localhost:3000/bar/foo/index.jsx를 주소창에 입력 시 404 오류 발생*
+  * **라우팅을 하려는 페이지는 같은 이름이 들어가면 안됨**
+  * **ex) localhost:3000/bar/foo/index.jsx를 주소창에 입력 시 404 오류 발생**
 
 ```
 Page Routing
