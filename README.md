@@ -19,12 +19,39 @@ image 컴포넌트를 사용하면 다양한 props를 전달 할 수 있음.
 * **정적 지원 중 이미지 파일은 SEO에 많은 영향을 미침**
 * **다운로드 시간이 많이 걸리고, 렌더링 후에 레이아웃이 변경되는 등 UX에 영향을 미침.**
 * **이것을 누적 레이아웃 이동(CLS: Cumulative Layout Shift)라고 함.**
-![Alt text](image-1.png)
+<img src="image-1.png" width="300px">
+
 * **Image 컴포넌트를 사용하면 CLS문제를 해결함.**
 * **lazy loading은 이미지 로드 시점을 필요할 때까지 지연시키는 기술임.**
 * **이미지 사이즈 최적화로 사이즈를 1/10이하로 줄여줌.**
 * **Placeholder를 제공함.**
 
+***
+### Image component - Remote
+
+```js
+const nextConfig = {
+  images: {
+    remotePatterns: {
+      {
+        protocol: "http",
+        hostname: "cdn.pixabay.com",
+      },
+    },
+  }
+};
+
+export default nextConfig;
+```
+***
+### 디렉토리 구조 조성
+* **Next.js에서는 특정 파일과 디렉토리가 지정된 위치에 있어야 함.**
+  * **_app.js나 _document.js 파일, pages/와 public/**
+* **Node_modules/ : Next.js 프로젝트의 의존성 패키지를 설치하는 디렉토리**
+* **pages/ : 애플리케이션의 페이지 파일을 저장하고 라우팅 시스템 관리**
+* **styles/ : 스타일링 포맷(CSS, SASS, LESS 등)과 관계없이 스타일링 모듈 관리**
+* **pages/ 디렉토리를 src/디렉토리 안으로 옮길 수 있음.**
+* **public과 node_modules/ 를 제외한 다른 디렉토리는 모두 src/로 옮길 수 있음.**
 
 ## _10월 4일_
 
