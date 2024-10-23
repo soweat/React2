@@ -1,5 +1,31 @@
 # _202030215 서민석_
 
+## *10월 23일*
+
+### image component
+```
+image 컴포넌트를 사용하면 다양한 props를 전달 할 수 있음.
+```
+* **주요 props**
+  * **src = ""**
+  * **width = {500}**
+  * **height = {500}**
+  * **alt = ""**
+  * **Placeholder = "blue" / 외부 이미지는 blurDataURL = ''로 처리**
+  * **loading = "lazy"**
+***
+### Static Resource
+
+* **정적 지원 중 이미지 파일은 SEO에 많은 영향을 미침**
+* **다운로드 시간이 많이 걸리고, 렌더링 후에 레이아웃이 변경되는 등 UX에 영향을 미침.**
+* **이것을 누적 레이아웃 이동(CLS: Cumulative Layout Shift)라고 함.**
+![Alt text](image-1.png)
+* **Image 컴포넌트를 사용하면 CLS문제를 해결함.**
+* **lazy loading은 이미지 로드 시점을 필요할 때까지 지연시키는 기술임.**
+* **이미지 사이즈 최적화로 사이즈를 1/10이하로 줄여줌.**
+* **Placeholder를 제공함.**
+
+
 ## _10월 4일_
 
 ### *_app*
