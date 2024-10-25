@@ -86,7 +86,7 @@ Next.js에서 REST API를 다룰 때는 보통 axios와 fetch 중 하나를 선�
   * 간단한 요청이나 내장된 기능을 활용하고 싶다면 fetch를 사용하는 것도 좋은 선택임.
   * 어떤 것을 선택할지는 프로젝트의 요구 사항과 개발자의 선호도에 따라 다를 수 있음.
 
-* Axios 사용하기
+### Axios 사용하기
 ```js
 fetch("http://api.example.com)
 .then(res => res.json()) // fetch에서는 json()으로 데이터를 추출
@@ -94,6 +94,9 @@ fetch("http://api.example.com)
   console.log(data) // 여기에 실제 응답 데이터가 있음.
 });
 ```
+* useState 사용 : users를 useState로 관리하여 데이터를 불러온 후 렌더링을 할 수 있게 함. 초기 상태는 Null
+* useEffect 사용 : 컴포넌트가 처음 렌더링 될 때 한번만 데이터를 가져오기 위해 사용
+* 로딩 상태 처리 : 데이터를 불러오는 동안 로딩 메세지를 표시하도록 loading 상태 추가
 
 ## *10월 23일*
 
