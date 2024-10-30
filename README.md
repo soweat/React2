@@ -43,6 +43,15 @@ Css 사용 시 Class 이름을 고유한 값으로 자동 생성하는 것을 �
 CSS-in-JS의 단점을 회피하기 위한 좋은 방법임.
 ```
 
+### SASS
+```
+Next에서 기본으로 지원하는 전 처리기
+
+$ npm install sass // 패키지 설치가 필요함.
+```
+
+* SASS 및 SCSS(Sassy CSS) 문법으로 CSS Module을 만들고 사용할 수 있음.
+
 ## *10월 25일*
 
 ### REST API
