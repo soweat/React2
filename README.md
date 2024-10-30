@@ -1,5 +1,48 @@
 # _202030215 서민석_
 
+## *10월 30일*
+
+### Styled JSX
+```
+Styled JSX는 CSS-in-JS라이브러리이며 내장 모듈이기 때문에 설치할 필요가 없음.
+CSS 속성 지정을 위해 자바스크립트를 사용할 수 있는 라이브러리임.
+``````
+
+* CSS-in-JS의 단점
+  * IDE나 코드 편집기 등 개발 도구에 대한 지원이 부족함.
+  * 문법 하이라이팅, 자동 완성 등의 기능을 제공하지 않음.
+  * 코드 내에서 CSS에 대한 의존성이 점점 커지기 때문에 앱 번들도 커지고 느려짐.
+  * 서버에 미리 CSS를 생성해도 클라이언트에서 리액트 하이드레이션이 끝나면 CSS를 다시 생성해야함.
+  * 이로 인해 실행 시점에 부하가 커지며 웹 앱이 계속 느려지게 되며 기능을 추가 할 수록 이 현상은 심해짐.
+
+### styled-jsx 실습
+* 예제 코드
+```jsx
+export default function StyledJsx() {
+    return(
+        <>
+        <button className="button">Styled JSX</button>
+        <style jsx>{`
+        .button {
+            padding: 1em;
+            border-radius: 15px;
+            background: green;
+            color: white;
+        }
+        `}
+        </style>
+        </>
+    )
+}
+```
+
+### CSS Module
+```
+Css 사용 시 Class 이름을 고유한 값으로 자동 생성하는 것을 의미
+
+CSS-in-JS의 단점을 회피하기 위한 좋은 방법임.
+```
+
 ## *10월 25일*
 
 ### REST API
