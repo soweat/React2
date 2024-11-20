@@ -62,6 +62,34 @@ store, reducer, action 등의 개념을 사용해 state와 state dispatch를 관
 | 유연성      | 낮음             | 높음               |
 | 디버깅 도구 | 기본적으로 없음  | Redux DevTool 제공 |
 
+### Redux 설치
+
+- 설치 코드 `npm install @reduxjs/toolkit react-redux`
+
+```js
+import { createSlice } from "@reduxjs/toolkit";
+
+export const counterSlice = createSlice({
+  name: "counter",
+  initialState: {
+    value: 0,
+  },
+  reducers: {
+    increment: (state) => {
+      state, (value += 1);
+    },
+    decrement: (state) => {
+      state.value -= 1;
+    },
+  },
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+```
+
+- counterSlice.jsx
+
 ## _11월 13일_
 
 ### Context API
