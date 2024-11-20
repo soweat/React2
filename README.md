@@ -90,6 +90,26 @@ export default counterSlice.reducer;
 
 - counterSlice.jsx
 
+```js
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "./counterSlice";
+
+export function Counter() {
+  const cout = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  return (
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={() => dispatch(increment())}>increment</button>
+      <button onClick={() => dispatch(decrement())}>decrement</button>
+    </div>
+  );
+}
+```
+
+- Counter.jsx
+
 ## _11월 13일_
 
 ### Context API
