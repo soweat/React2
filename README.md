@@ -6,7 +6,7 @@
 
 - github.io 작성 코드 및 출력 화면
 
-<img src="image-3.png"  width="80%" height="40%"/>
+<img src="image-3.png" width="80%" height="40%"/>
 
 ## _11월 20일_
 
