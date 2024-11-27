@@ -1,5 +1,13 @@
 # _202030215 서민석_
 
+## _11월 27일_
+
+### Github.io
+
+- github.io 작성 코드 및 출력 화면
+
+<img src="image-3.png"  width="80%" height="40%"/>
+
 ## _11월 20일_
 
 ### use client
